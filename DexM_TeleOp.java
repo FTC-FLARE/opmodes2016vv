@@ -37,8 +37,6 @@ public class DexM_TeleOp extends LinearOpMode {
             checkForCapLiftCommands();
             checkForCapLiftLockCommands();
 
-//            robot.collector.speedTest();
-
             updateTelemetry();
 
             robot.waitForTick(40);
@@ -82,10 +80,10 @@ public class DexM_TeleOp extends LinearOpMode {
         if (robot.opMode.gamepad1.y) {
             robot.sweeper.setSweeper0Percent();
         }
-        else if (robot.opMode.gamepad1.x || robot.opMode.gamepad1.b) {
+        else if (robot.opMode.gamepad1.b) {
             robot.sweeper.setSweeper50Percent();
         }
-        else if (robot.opMode.gamepad1.a) {
+        else if (robot.opMode.gamepad1.x) {
             robot.sweeper.setSweeper70Percent();
         }
     }
