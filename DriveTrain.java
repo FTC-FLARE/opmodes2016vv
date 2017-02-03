@@ -413,7 +413,6 @@ public class DriveTrain {
                           double angle) {
 
         int adjustTicks;
-        double max;
         double error;
         double steer;
         double leftSpeed;

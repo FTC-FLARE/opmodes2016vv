@@ -103,7 +103,7 @@ public class DexM_TeleOp extends LinearOpMode {
 
     private void checkForCapLiftCommands () {
 
-        robot.capLift.Lift();
+        robot.capLift.Lift(-robot.opMode.gamepad2.left_stick_y);
 
     }
 
